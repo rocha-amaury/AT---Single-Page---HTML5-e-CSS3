@@ -1,0 +1,659 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: Open Sans, Arial, sans-serif;
+  width: 98%;
+  margin: auto;
+  background-color: whitesmoke;
+  top:-60px;
+  
+}
+
+h2{
+  text-align:center;
+  color: #1d455e;
+}
+
+h3{
+  text-align:center;
+  color: #1d455e;
+}
+
+input[type=text] {
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.padding-top{
+  padding-top: 10px
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.padding-top-60{
+  padding-top: 60px;
+}
+
+.clear{
+  clear: both;
+}
+
+button:hover {
+  background-color: white;
+  border: 1px solid #1d455e;
+  color: #1d455e;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+  position:sticky;
+  top:0px;
+  background-color: rgba(29, 69, 94, 0.8);
+}
+
+.cabecalho-filho{
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.cabecalho-logo {
+  width: 200px;
+  display: inline-block;
+}
+
+.cabecalho-logo-img{
+  margin-right: 10px; 
+  width:60px;
+  float: left;
+}
+
+.cabecalho-logo-txt{
+  color:white;
+   padding-top:20px;
+}
+
+div.cabecalho-menu {
+  display: inline-block;
+  text-align: center;
+  float:right;
+  }
+
+.itemmenu{
+  float:right;
+  font-size: 12px;
+  font-family: sans-serif;
+  padding-right:15px ;
+  background-color: transparent;
+  color:white; 
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.link-menu{
+  color:white; 
+  text-decoration: none;
+}
+.link-menu:hover{
+  text-decoration: underline;
+}
+.link-menu:visited{
+  color:white; 
+}
+
+/* FIM CABEÇALHO */
+header { 
+  color: white;
+  height: 1024px;
+  margin: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagens/plenario_congresso-1024x683.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text-titulo{
+  font-size: 50px;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 0px rgba(29, 69, 94, 1);
+}
+
+.hero-text-subtitulo{
+  font-size: 20px; 
+  padding: 20px 0 20px 0;
+}
+
+.hero-btn{
+  margin: 10px 0 10px 0px;
+  text-align: center;
+  border-radius: 5px;  
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #1d455e;
+  border: transparent;
+  width: 150px;
+  height: 45px;
+  text-transform: uppercase;
+}
+
+.footer{
+  margin: auto;
+/*   width: 98%; */
+  height: 50px;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  background-color:  #1d455e;
+}
+
+
+/* SETA VOLTA AO TOPO */
+.seta-topo-pai{
+  position: fixed;
+  bottom: 15px;
+  right: 25px;
+}
+
+.seta-topo {
+  border-radius: 50%;
+  background:  #1d455e;
+  color: white;
+  padding: 10px 10px;
+  font-size: 30x;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* FIM SETA VOLTA AO TOPO */
+
+/* PARTE 2 - DEPUTADOS */
+
+.deputados-pai{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  
+}
+
+.deputados-inicio{
+/*   border: 1px solid steelblue; */
+  text-align:center;
+}
+
+.deputados-inicio-subtitulo{
+  padding-top: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #1d455e;
+}
+
+#input-nome-deputado{
+  width: 450px;
+  margin: 40px 0 10px 0;
+}
+
+.btn-deputado{
+  margin: 10px 0 10px 0px;
+  text-align: center;
+  border-radius: 5px;  
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #1d455e;
+  border: transparent;
+  width: 450px;
+  height: 45px;
+}
+
+.deputados-card-pai {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.deputados-card{
+  width: 200px;
+  border-radius: 5px;
+  background:white;  
+  margin: 10px 20px 10px 20px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+.deputados-card img{
+  max-width: 100%;
+  margin: 10px auto 0 auto;
+  padding-bottom: 25px;
+  padding:10px 0 20px 0;
+  object-fit:scale-down;
+}
+
+.deputados-card-nome {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align:center;
+  color: #1d455e;
+}
+
+.deputados-card-partido {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align:center;
+  color: #1d455e;
+}
+
+.deputados-card-detalhes{
+  padding:15px 0 20px 20px;
+  color: #1d455e;
+}
+
+.deputados-card-lista-item{
+  margin: 0 auto 20px auto;
+  font-size:15px;  
+  width:130px;
+  list-style-type: circle;
+}
+
+.deputados-card-links{
+  margin: auto;  
+  display:flex;
+  padding-bottom: 25px;
+}
+
+.deputados-card-links-icones {
+  border-radius: 50%;
+  background: #1d455e;;
+  color: white;
+  padding: 6px;
+  font-size: 20x;
+  width: 30px;
+  height:30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* FIM PARTE 2 - DEPUTADOS */
+
+/* PARTE 3 - PARTIDOS */
+
+.partidos-pai{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
+
+.partidos-inicio{
+/*   border: 1px solid steelblue; */
+  text-align:center;
+}
+
+.partidos-inicio-subtitulo{
+  padding-top: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #1d455e;
+}
+
+#input-nome-partido{
+  width: 450px;
+  margin: 40px 0 10px 0;
+}
+
+.btn-partidos{
+  margin: 10px 0 10px 0px;
+  text-align: center;
+  border-radius: 5px;  
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #1d455e;
+  border: transparent;
+  width: 450px;
+  height: 45px;
+}
+
+.partidos-card-pai {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.partidos-card{
+  width: 200px;
+  border-radius: 5px;
+  background:white;  
+  margin: 10px 20px 10px 20px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+.partidos-card img{
+  max-width: 100%;
+/*   height: 80px; */
+  margin: 10px auto 0 auto;
+  padding-bottom: 25px;
+  padding:10px 0 20px 0;
+  object-fit:scale-down;
+}
+
+
+.partidos-card-partido {
+  font-size: 15px;
+  font-weight: bold;
+  text-align:center;
+  color: #1d455e;
+  padding-bottom: 15px;
+}
+
+.partidos-card-links{
+  margin: auto;  
+  display:flex;
+  padding-bottom: 25px;
+}
+.partidos-card-links-icones {
+  border-radius: 50%;
+  background: #1d455e;;
+  color: white;
+  padding: 6px;
+  font-size: 20x;
+  width: 30px;
+  height:30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* FIM PARTE 3 - PARTIDOS */
+
+
+/* PARTE 4 - NOTÍCIAS */
+
+.noticias-pai{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+  padding-top: 10px;
+}
+
+.noticias-filho{
+  width: 500px;  
+  height: 300px;
+}
+
+.noticias-filho-img{
+  width: 500px; 
+  height: 300px; 
+  object-fit:fill;
+}
+
+.noticias-titulo{
+  text-align: center;
+  font-weight: bold;
+}
+
+.noticias-corpo{
+  text-align: justify;
+  padding-top: 10px;
+  color:#b0afae;
+  line-height: 1.3;
+}
+
+.noticias-fonte{
+  text-align: center;
+  padding: 20px 0 65px 0;
+  color:#b0afae;
+}
+
+.noticias-btn{
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 3px;  
+  font-size: 12px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #1d455e;
+  border: transparent;
+  width: 500px;
+  height: 45px;
+  margin-top:auto;
+}
+
+/* FIM PARTE 4 - NOTÍCIAS */
+
+/* PARTE 5 - EVENTOS */
+
+.eventos-subtitulo{
+  text-align: center;
+  font-weight: bold;
+  padding: 20px 0 10px 0;
+  font-size: 20px;
+  color:  #1d455e;
+}
+
+.eventos-pai{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+  padding-top: 10px;
+}
+
+.eventos-filho{
+  display:flex;
+  flex-direction:row;
+}
+
+input[type=text] {
+  padding: 12px 20px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#input-evento-descricao{
+  width: 500px;
+  height: 45px;
+  margin-right:20px;
+}
+
+#input-evento-data{
+  width: 300px;
+    height: 45px;
+}
+.btn-buscar-eventos{
+  text-align: center;
+  padding: 12px 20px;
+  border-radius: 3px;  
+  font-size: 10px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #1d455e;
+  border: transparent;
+  width: 100px;
+  height: 45px;
+  margin-left:25px;
+}
+
+.eventos-neto{
+  width:50%;
+  display:flex;
+  flex-direction:row;
+  margin: 20px;
+}
+
+.eventos{
+  padding: 10px 0 10px 0;
+  color:#79797b;
+}
+.grow{
+  flex-grow: 1
+}
+.eventos-barra{
+  background-color: #1d455e;
+  width:3px;
+  height:100%;
+  margin-right:10px;
+}
+
+.evento-data li{
+  margin: 0 auto 20px auto;
+  font-size:15px;  
+  width:130px;
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+.evento-descricao li{
+  margin: 0 auto 5px auto;
+  font-size:15px;    
+  list-style-type: none;  
+}
+
+.btn-eventos-semana{
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 3px;  
+  font-size: 10px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #1d455e;
+  border: transparent;
+  width: 500px;
+  height: 45px;
+}
+
+/* FIM PARTE 5 - EVENTOS */
+
+/* PARTE 6 - PROJETOS */
+.projetos-subtitulo{
+  text-align: center;
+  font-weight: bold;
+  padding: 20px 0 10px 0;
+  font-size: 20px;
+  color:  #1d455e;
+}
+
+.projetos-pai{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.projetos-filho{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+
+#projetos-tabela {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:#fbfbfb;
+  color: black;
+}
+
+#projetos-tabela td, #projetos-tabela th {
+  border: 1px solid #e3e5ea;
+  padding: 8px;
+  text-align:center;  
+}
+
+#projetos-tabela tr:nth-child(even){
+  background-color: #eeeeee;}
+
+#projetos-tabela tr:hover {
+  background-color: #ddd;}
+
+/* FIM PARTE 6 - PROJETOS */
+
+/* PARTE 7 - CONTATO */
+
+.contato-inicio{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  padding-bottom: 100px;
+}
+
+.contato-subtitulo{
+  padding-top: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #1d455e;
+  text-align:left !important;
+}
+.contato-texto{
+  margin-bottom:40px;
+/*   width:80%; */
+  color: #91918d;
+}
+
+.contato-texto-interior{
+  margin-top:15px;
+}
+.btn-contato{
+  margin: 10px 0 10px 0px;
+  text-align: center;
+  border-radius: 5px;  
+  font-size: 12px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #1d455e;
+  border: transparent;
+  width: 500px;
+  height: 45px;
+}
+
+.btn-contato-mailto{
+  color:  white;
+  text-decoration: none;
+}
+
+.btn-contato-mailto:hover{
+  background-color: white;
+  color: #1d455e;
+}
+
+
+
+/* FIM PARTE 7 - CONTATO */

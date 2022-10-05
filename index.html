@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>AT - Single Page</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;900" rel="stylesheet">
+</head>
+
+<body  onLoad="window.scroll(0, 60)">
+  <main>
+
+    <div class="cabecalho">
+      <div class="cabecalho-filho">
+        <div class="cabecalho-logo">
+          <img class="cabecalho-logo-img" src="imagens/infnetlog.png" alt="Logo" title="logo-png">
+          <p class="cabecalho-logo-txt">dados abertos</p>
+        </div>
+        <div class="cabecalho-menu">
+          <nav class="menu">
+            <ul>
+              <li class="itemmenu"><a class="link-menu" href="#contato">Contato</a></li>
+              <li class="itemmenu"><a class="link-menu" href="#projetos">Projetos de lei</a></li>
+              <li class="itemmenu"><a class="link-menu" href="#eventos">Eventos</a></li>
+              <li class="itemmenu"><a class="link-menu" href="#partidos">Partidos</a></li>
+              <li class="itemmenu"><a class="link-menu" href="#deputados">Deputados</a></li>
+              <li class="itemmenu"><a class="link-menu" href="#inicio">Início</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <span class="clear" id="topo"></span>
+    
+    <header id="inicio">     
+
+      <div class="hero-image">
+
+        <div class="hero-text">
+          <p class="hero-text-titulo">Quem são os deputados</p>
+          <p class="hero-text-subtitulo">Conheça os deputados, seus partidos e legislaturas.</p>
+          <button class="hero-btn">Deputados</button>
+        </div>
+
+      </div>
+
+    </header>
+
+    <span class="clear"></span>
+
+    <div class="deputados-pai padding-top-60" id="deputados">
+
+      <div class="deputados-inicio">
+        <h2>DEPUTADOS</h2>
+        <p class="deputados-inicio-subtitulo">Consulte aqui os Deputados da Legislatura atual:</p>
+
+        <div class="padding-top">
+          <input type="text" id="input-nome-deputado" name="nome-deputado" placeholder="Nome do Deputado">
+        </div>
+        <div class="inicio-deputados-btn">
+          <button class="btn-deputado"><span><i class="fa fa-search"></i></span> BUSCAR</button>
+        </div>
+      </div>
+
+      <div class="deputados-card-pai">
+
+        <div class="deputados-card">
+          <img src="imagens/deputado_1.jpg" alt="Deputado 1" title="Deputado 1">
+          <p class="deputados-card-nome">Fulano de tal</p>
+          <p class="deputados-card-partido">(PL-BA)</p>
+          <p class="deputados-card-detalhes">Detalhes:</p>
+
+          <ul class="deputados-card-lista">
+            <li class="deputados-card-lista-item">Legislaturas em que exerceu mandato: <span class="bold">56ª</span>
+            </li>
+            <li class="deputados-card-lista-item">Partidos pelos quais já foi deputado: <span class="bold">PL,
+                PHS</span></li>
+          </ul>
+
+          <div class="deputados-card-links">
+            <a href="#" class="deputados-card-links-icones" title="face"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="deputados-card-links-icones" title="twit"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="deputados-card-links-icones" title="inst"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div class="deputados-card">
+          <img src="imagens/deputado_2.jpg" alt="Deputado 2" title="Deputado 2">
+          <p class="deputados-card-nome">Fulano de tal</p>
+          <p class="deputados-card-partido">(PL-BA)</p>
+          <p class="deputados-card-detalhes">Detalhes:</p>
+
+          <ul class="deputados-card-lista">
+            <li class="deputados-card-lista-item">Legislaturas em que exerceu mandato: <span class="bold">56ª</span>
+            </li>
+            <li class="deputados-card-lista-item">Partidos pelos quais já foi deputado: <span class="bold">PL,
+                PHS</span></li>
+          </ul>
+
+          <div class="deputados-card-links">
+            <a href="#" class="deputados-card-links-icones" title="face"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="deputados-card-links-icones" title="twit"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="deputados-card-links-icones" title="inst"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div class="deputados-card">
+          <img src="imagens/deputado_3.jpg" alt="Deputado 3" title="Deputado 3">
+          <p class="deputados-card-nome">Fulano de tal</p>
+          <p class="deputados-card-partido">(PL-BA)</p>
+          <p class="deputados-card-detalhes">Detalhes:</p>
+
+          <ul class="deputados-card-lista">
+            <li class="deputados-card-lista-item">Legislaturas em que exerceu mandato: <span class="bold">56ª</span>
+            </li>
+            <li class="deputados-card-lista-item">Partidos pelos quais já foi deputado: <span class="bold">PL,
+                PHS</span></li>
+          </ul>
+
+          <div class="deputados-card-links">
+            <a href="#" class="deputados-card-links-icones" title="face"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="deputados-card-links-icones" title="twit"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="deputados-card-links-icones" title="inst"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div class="deputados-card">
+          <img src="imagens/deputado_4.jpg" alt="Deputado 4" title="Deputado 4">
+          <p class="deputados-card-nome">Fulano de tal</p>
+          <p class="deputados-card-partido">(PL-BA)</p>
+          <p class="deputados-card-detalhes">Detalhes:</p>
+
+          <ul class="deputados-card-lista">
+            <li class="deputados-card-lista-item">Legislaturas em que exerceu mandato: <span class="bold">56ª</span>
+            </li>
+            <li class="deputados-card-lista-item">Partidos pelos quais já foi deputado: <span class="bold">PL,
+                PHS</span></li>
+          </ul>
+
+          <div class="deputados-card-links">
+            <a href="#" class="deputados-card-links-icones" title="face"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="deputados-card-links-icones" title="twit"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="deputados-card-links-icones" title="inst"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div class="deputados-card">
+          <img src="imagens/deputado_5.jpg" alt="Deputado 5" title="Deputado 5">
+          <p class="deputados-card-nome">Fulano de tal</p>
+          <p class="deputados-card-partido">(PL-BA)</p>
+          <p class="deputados-card-detalhes">Detalhes:</p>
+
+          <ul class="deputados-card-lista">
+            <li class="deputados-card-lista-item">Legislaturas em que exerceu mandato: <span class="bold">56ª</span>
+            </li>
+            <li class="deputados-card-lista-item">Partidos pelos quais já foi deputado: <span class="bold">PL,
+                PHS</span></li>
+          </ul>
+
+          <div class="deputados-card-links">
+            <a href="#" class="deputados-card-links-icones" title="face"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="deputados-card-links-icones" title="twit"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="deputados-card-links-icones" title="inst"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div class="deputados-card">
+          <img src="imagens/deputado_6.jpg" alt="Deputado 6" title="Deputado 6">
+          <p class="deputados-card-nome">Fulano de tal</p>
+          <p class="deputados-card-partido">(PL-BA)</p>
+          <p class="deputados-card-detalhes">Detalhes:</p>
+
+          <ul class="deputados-card-lista">
+            <li class="deputados-card-lista-item">Legislaturas em que exerceu mandato: <span class="bold">56ª</span>
+            </li>
+            <li class="deputados-card-lista-item">Partidos pelos quais já foi deputado: <span class="bold">PL,
+                PHS</span></li>
+          </ul>
+
+          <div class="deputados-card-links">
+            <a href="#" class="deputados-card-links-icones" title="face"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="deputados-card-links-icones" title="twit"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="deputados-card-links-icones" title="inst"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div class="deputados-card">
+          <img src="imagens/deputado_7.jpg" alt="Deputado 7" title="Deputado 7">
+          <p class="deputados-card-nome">Fulano de tal</p>
+          <p class="deputados-card-partido">(PL-BA)</p>
+          <p class="deputados-card-detalhes">Detalhes:</p>
+
+          <ul class="deputados-card-lista">
+            <li class="deputados-card-lista-item">Legislaturas em que exerceu mandato: <span class="bold">56ª</span>
+            </li>
+            <li class="deputados-card-lista-item">Partidos pelos quais já foi deputado: <span class="bold">PL,
+                PHS</span></li>
+          </ul>
+
+          <div class="deputados-card-links">
+            <a href="#" class="deputados-card-links-icones" title="face"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="deputados-card-links-icones" title="twit"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="deputados-card-links-icones" title="inst"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div class="deputados-card">
+          <img src="imagens/deputado_8.jpg" alt="Deputado 8" title="Deputado 8">
+          <p class="deputados-card-nome">Fulano de tal</p>
+          <p class="deputados-card-partido">(PL-BA)</p>
+          <p class="deputados-card-detalhes">Detalhes:</p>
+
+          <ul class="deputados-card-lista">
+            <li class="deputados-card-lista-item">Legislaturas em que exerceu mandato: <span class="bold">56ª</span>
+            </li>
+            <li class="deputados-card-lista-item">Partidos pelos quais já foi deputado: <span class="bold">PL,
+                PHS</span></li>
+          </ul>
+
+          <div class="deputados-card-links">
+            <a href="#" class="deputados-card-links-icones" title="face"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="deputados-card-links-icones" title="twit"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="deputados-card-links-icones" title="inst"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="partidos-pai padding-top-60" id="partidos">
+
+      <div class="partidos-inicio">
+        <h2>PARTIDOS</h2>
+        <p class="partidos-inicio-subtitulo">Consulte aqui os Partidos existentes:</p>
+
+        <div class="padding-top">
+          <input type="text" id="input-nome-partido" name="nome-partido" placeholder="Nome do Partido">
+        </div>
+
+        <div class="inicio-partidos-btn">
+          <button class="btn-partidos"><span><i class="fa fa-search"></i></span> BUSCAR</button>
+        </div>
+      </div>
+
+      <div class="partidos-card-pai">
+
+        <div class="partidos-card">
+          <img src="imagens/partido_1.png" alt="Logotipo do partido 1" title="partido_1">
+          <p class="partidos-card-partido">Partido XPTO</p>
+
+          <div class="partidos-card-links">
+            <a href="#" class="partidos-card-links-icones" title="face"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="partidos-card-links-icones" title="twit"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="partidos-card-links-icones" title="inst"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="partidos-card">
+          <img src="imagens/partido_2.png" alt="Logotipo do partido 2" title="partido_2">
+          <p class="partidos-card-partido">Partido XPTO</p>
+
+          <div class="partidos-card-links">
+            <a href="#" class="partidos-card-links-icones" title="face"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="partidos-card-links-icones" title="twit"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="partidos-card-links-icones" title="inst"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="partidos-card">
+          <img src="imagens/partido_3.png" alt="Logotipo do partido 3" title="partido_3">
+          <p class="partidos-card-partido">Partido XPTO</p>
+
+          <div class="partidos-card-links">
+            <a href="#" class="partidos-card-links-icones" title="face"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="partidos-card-links-icones" title="twit"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="partidos-card-links-icones" title="inst"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="partidos-card">
+          <img src="imagens/partido_4.png" alt="Logotipo do partido 4" title="partido_4">
+          <p class="partidos-card-partido">Partido XPTO</p>
+
+          <div class="partidos-card-links">
+            <a href="#" class="partidos-card-links-icones" title="face"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="partidos-card-links-icones" title="twit"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="partidos-card-links-icones" title="inst"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+
+    <div class="secao-noticias padding-top-60" id="noticias">
+      <h3>NOTÍCIAS</h3>
+      <div class="noticias-pai">
+
+        <div class="noticias-filho">
+          <img class="noticias-filho-img" src="imagens/noticia.jpg" alt="Incêndio no Pantanal em 2020" title="Queimada">
+        </div>
+
+        <div class="noticias-filho">
+          <p class="noticias-titulo"> Comitiva da Câmara dos Deputados visita áreas queimadas no Pantanal</p>
+          <p class="noticias-corpo">A Câmara dos Deputados visita, de hoje a domingo (20), localidades atingidas pelos
+            incêndios florestais no Pantanal mato-grossense. O grupo de parlamentares irá se reunir com entidades,
+            bombeiros e gestores da região em busca de soluções para a grave emergência ambiental.</p>
+          <p class="noticias-fonte">Fonte: Agência Câmara de Notícias</p>
+          <button class="noticias-btn">VEJA MAIS NOTÍCIAS</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="secao-eventos padding-top-60" id="eventos">
+      <h3>EVENTOS</h3>
+      <p class="eventos-subtitulo">Consulte aqui os eventos agendados:</p>
+
+      <div class="eventos-pai">
+
+        <div class="eventos-filho">
+          <div class="padding-top">
+            <input type="text" id="input-evento-descricao" name="evento-descricao" placeholder="Descrição Evento">
+            <input type="text" id="input-evento-data" name="evento-data" placeholder="Data do Evento">
+            <button class="btn-buscar-eventos">BUSCAR</button>
+          </div>
+        </div>
+
+        <div class="eventos-filho">
+          <div class="eventos-neto">
+
+            <div class="eventos">
+              <ul class="evento-data">
+                <li><i class="fa fa-clock-o"></i><span class="eventos-info"> 22/09/2022</span></li>
+                <li><i class="fa fa-calendar"></i><span class="eventos-info"> 10h00</span></li>
+              </ul>
+            </div>            
+            <div class="eventos-barra"></div>
+            <div class="eventos">
+              <ul class="evento-descricao">
+                <li><span class="eventos-info">CÂMARA DOS DEPUTADOS</span></li>
+                <li><span class="eventos-info">A atual situação da ANCINE - Evento</span></li>
+                <li><span class="eventos-info">Técnico</span></li>
+                <li><span class="eventos-info">Anexo II, Plenário 06</span></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="eventos-neto">
+            <div class="eventos">
+              <ul class="evento-data">
+                <li><i class="fa fa-clock-o"></i><span class="eventos-info"> 22/09/2022</span></li>
+                <li><i class="fa fa-clock-o"></i><span class="eventos-info"> 10h00</span></li>
+              </ul>
+            </div>
+            <div class="eventos-barra"></div>
+            <div class="eventos grow">
+              <ul class="evento-descricao">
+                <li><span class="eventos-info">CÂMARA DOS DEPUTADOS</span></li>
+                <li><span class="eventos-info">A atual situação da ANCINE - Evento</span></li>
+                <li><span class="eventos-info">Técnico</span></li>
+                <li><span class="eventos-info">Anexo II, Plenário 06</span></li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="eventos-filho">
+          <button class="btn-eventos-semana">EVENTOS DA SEMANA</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div  class="secao-projetos padding-top-60" id="projetos">
+      <h3>PROJETOS DE LEI</h3>
+      <p class="projetos-subtitulo">Consulte aqui os Projetos de lei em votação:</p>
+      
+      <div class="projetos-pai">
+      
+        <div class="projetos-filho">        
+          <table id="projetos-tabela">
+          <tr>
+            <th>N° do PL</th>
+            <th>Ementa</th>
+            <th>Situação</th>
+          </tr>
+          <tr>
+            <td>2469/2022</td>
+            <td>Institui o Dia Nacional do Rádio, a ser comemorado, anualemente, em 25 de setembro.</td>
+            <td>Em tramitação</td>
+          </tr>
+          <tr>
+            <td>2316/2022</td>
+            <td>Altera a Lei nº 9.478, de 6 de agosto de 1997, e a Lei nº 9.847, de 26 de outubro de 1999, para dispor sobre o acesso de terceiro interessado a dutos de transporte e terminais aquaviários</td>
+            <td>Em tramitação</td>
+          </tr>
+          <tr>
+            <td>409/2022</td>
+            <td>Aprova o Plano Nacional do Desporto</td>
+            <td>Em tramitação</td>
+          </tr>
+          <tr>
+            <td>11276/2018</td>
+            <td>Institui a Política Nacional de Manejo Integrado do Fogo.</td>
+            <td>Em tramitação</td>
+          </tr>
+          <tr>
+            <td>11098/2018</td>
+            <td>Dispõe sobre o auxílio-inclusão para a pessoa com deficiência moderada ou grave, de que trata o art. 94 da lei n° 13.146 de 6 de junlho de 2015.</td>
+            <td>Em tramitação</td>
+          </tr>
+        </table>      
+        </div>
+      
+      </div>
+    </div>    
+
+    <div class="contato-pai padding-top-60" id="contato">
+      <h2>CONTATO</h2>
+    
+      <div class="contato-inicio">
+        <div class="contato-texto">
+          <p class="contato-subtitulo">Fale conosco</p>
+          <p class="contato-texto-interior">Deixe-nos suas críticas, elogios e sugestões.</p>
+          <p class="contato-texto-interior">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptates debitis aperiam tenetur inventore ad odio, illo sit nulla esse sed explicabo sequi, et ullam, maxime molestiae maiores pariatur quibusdam.</p>
+          <p class="contato-texto-interior"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptates debitis aperiam tenetur inventore ad odio, illo sit nulla esse sed explicabo sequi, et ullam, maxime molestiae maiores pariatur quibusdam.</p>      
+          </div>
+        <div class="contato-btn">
+          <button class="btn-contato" onclick="window.location.href='mailto:amaury.junior@al.infnet.edu.br'"> ENVIE-NOS UM E-MAIL</button>
+<!--           <a class="btn-contato-mailto" href="mailto:amaury.junior@al.infnet.edu.br"> -->
+        </div>
+      </div>
+    
+    </div>
+
+    <footer class="footer">
+      <p>Instituto Infinet - Assessment Fundamentos de Programação Web</p>
+    </footer>
+
+    <div class="seta-topo-pai">
+      <a href="#topo" class="seta-topo"><i class="fa fa-angle-up fa-lg"></i></a>
+    </div>
+
+  </main>
+
+
+
+</body>
+
+</html>
